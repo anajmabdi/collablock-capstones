@@ -1,0 +1,45 @@
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+  
+  .noun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    font-size:larger;
+  }
+  
+  
+  
+  /* Styles for the buttons container */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    margin-right: 10px;
+    background: #f8dede;
+    color: #040303;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #733e78;
+    transition: box-shadow 0.3s;
+  }
+  
+  .button:hover {
+    box-shadow: 0 0 20px #593565;
+  }
+  
+  
+  .button:last-child {
+    margin-right: 0;
+  }

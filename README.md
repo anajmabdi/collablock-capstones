@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Collab Block App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Collab Block is an interactive web application that allows anonymous users to collaborate in a unique and creative way. It generates random words for users to draw on a shared canvas, enabling real-time communication and collaboration through the use of Socket.io. The canvas functionality is powered by the HTML5 Canvas API, providing an intuitive drawing experience for all participants. 
+( *This project is still a work in progress. In case you were wondering, my commit history isn't looking good due starting on a new repo and referencing my previous repo, collablock. I am in the middle of fixing a bug I've been facing relating to not being able to push the rest of my work along with their commits, so this is the bandaid so to speak.* )
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Word Generation**: When a user goes to the canvas page, a random word is generated and assigned to them. This word serves as the theme for their drawing on the shared canvas. The word generation is achieved through an external API provided by [random-word-form.repl.co](https://random-word-form.repl.co/).
 
-### `npm start`
+- **Canvas Drawing**: Users can draw freely on the canvas by HTML5 Canvas API. The canvas currently only provides a black pen for drawing and a button to clear canvas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-Time Communication**: Collab Block implements real-time communication using Socket.io. This means that whenever a user draws on the canvas, the changes are instantly reflected on the screens of all other connected users, creating a seamless collaborative experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Anonymous Participation**: The app allows users to join without requiring any sign-up or login process.
 
-### `npm test`
+- In the near future, more functionality will be added and more testing is needed to make sure that the changes are actually being reflected on both screens of the users.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## How to Use
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine, on the desktop then run following command.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    * git clone https://github.com/anajmabdi/collab-block
+    * cd collablock
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the required dependencies by running '*npm install*'
 
-### `npm run eject`
+3. Start front and back servers
+    * Front: npm run start 
+    * Back: node index.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Access the application in your web browser.
+    Open your web browser and go to http://localhost:3000 to access the Collablock app. Share the URL with others to invite them to join the collaborative drawing session.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
+- Node.js: The server-side environment for running the Collab Block app.
+- Express.js: A web framework for handling HTTP requests and routes.
+- Socket.io: Enables real-time, bidirectional communication between clients and the server.
+- HTML5 Canvas API: The foundation for the collaborative drawing canvas, providing tools for rendering graphics on the web page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Bugs
+- None
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+MIT License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Copyright (c) [2023] [Najma Abdi]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
